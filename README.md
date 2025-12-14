@@ -75,9 +75,4 @@ Auth	JWT-based authentication
 Communication	REST APIs + WebSocket/MQTT hooks
 Build & Deployment	Netlify / Vercel / Docker
 
- ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
   
