@@ -1,83 +1,89 @@
-🌐 SurakshaRide+ (Frontend – React)
+# SurakshaRide+ (Frontend – React)
 
 AI & IoT Powered Last-Mile Safety Platform for Women
 
-SurakshaRide+ is a web + mobile safety ecosystem designed to make last-mile travel safer, especially for women during night-time mobility. The frontend is built using React, with responsive UI components, real-time mapping, and seamless integration with backend APIs and IoT beacons.
+SurakshaRide+ is a web and mobile safety ecosystem designed to enhance last-mile travel security, with a strong focus on women’s safety during night-time mobility. The frontend is built using React and provides a responsive, real-time, map-driven user experience with seamless integration to backend services and IoT safety beacons.
 
-This README provides an overview of features, architecture, setup instructions, and contribution guidelines for the React frontend.
+This repository contains the React frontend for SurakshaRide+, including user-facing safety interfaces, real-time alert visualizations, and dashboards for volunteers and responders.
 
-🚀 Features (Frontend Highlights)
-🔴 1. Multi-Modal SOS Interface
+---
 
-One-tap SOS button with red alert UI
+## Features
 
-Voice/scream detection trigger (with user permission)
+### 1. Multi-Modal SOS Interface
+- One-tap SOS button with high-visibility alert UI  
+- Voice/scream detection trigger (permission-based)  
+- Emergency contact display with false-alarm cancellation option  
 
-Auto-display of emergency contacts + cancel false alarm option
+### 2. Community and Authority Alert Interface
+- Live map showing nearby responders, police stations, and verified volunteers  
+- “I’m Going” toggle for responders  
+- Real-time alert status updates (Acknowledged, En Route, Arrived)  
 
-👥 2. Community & Authority Alert UI
+### 3. Driver Verification Module
+- Driver profile verification via QR scan or number entry  
+- Display of driver photograph and vehicle details  
+- Secure data sharing with backend services  
 
-Live map showing responders, police stations, and nearby volunteers
+### 4. Smart Safety Map
+- Integration with Leaflet / Mapbox  
+- Nearby safety infrastructure visualization (police stations, hospitals, washrooms, petrol pumps)  
+- Visual alerts when entering identified high-risk zones  
 
-“I’m Going” toggle for verified responders
+### 5. Public Transport Safety Layer
+- Crowdedness indicator powered by AI (non-identifying)  
+- Coach selection interface with safer-coach recommendations  
 
-Real-time status updates (Acknowledged / En route / Arrived)
+### 6. Encrypted Real-Time Tracking (UI Layer)
+- Live location sharing interface  
+- Audio/video streaming placeholders for backend integration  
 
-🚗 3. Driver Verification
+### 7. Offline and Fallback Support
+- Graceful UI degradation during internet or GPS loss  
+- SMS-based fallback prompts  
 
-Driver profile scan screen (QR/number entry)
+### 8. Volunteer Dashboard
+- Alert feed with real-time status  
+- Interactive map view  
+- Volunteer verification badge and response actions  
 
-Display driver photo, vehicle details
+---
 
-Push data to backend for safe-share
+## Frontend Architecture Overview
 
-🗺️ 4. Smart Safety Map
+- Component-driven React architecture  
+- Centralized state management using Redux Toolkit or Zustand  
+- API communication via REST APIs and WebSocket/MQTT hooks  
+- Map rendering and geospatial logic handled at the UI layer  
+- Designed for scalability across web and mobile platforms  
 
-React-map/Leaflet/Mapbox integration
+---
 
-Nearby police, hospitals, washrooms, petrol pumps
+## Tech Stack
 
-Visual alerts when entering risky zones
+| Category | Technology |
+|--------|------------|
+| Framework | React (Vite or Create React App) |
+| UI | TailwindCSS / Material UI |
+| Maps | Leaflet / Mapbox GL |
+| State Management | Redux Toolkit / Zustand |
+| Authentication | JWT-based authentication |
+| Communication | REST APIs, WebSockets, MQTT hooks |
+| Build & Deployment | Netlify, Vercel, Docker |
 
-🚍 5. Public Transport Safety Layer
+---
 
-Crowdedness indicator (AI-backed, non-identifying)
+## Getting Started
 
-Coach selection UI (safer coach recommendation)
+### Prerequisites
+- Node.js (v18 or later recommended)
+- npm or yarn
 
-🛡️ 6. Encrypted Real-time Tracking (UI Layer)
+### Installation
+```bash
+npm install
 
-Live location sharing card
-
-Audio/video streaming placeholders with backend integration
-
-📶 7. Offline & Fallback
-
-Graceful UI fallback when internet or GPS becomes unavailable
-
-SMS-based fallback prompts
-
-🤝 8. Volunteer Dashboard (Frontend View)
-
-Alerts list
-
-Map view
-
-Verification badge and interaction buttons
-
-🏗️ Tech Stack (Frontend)
-Category	Technology
-Framework	React (Vite or CRA)
-UI	TailwindCSS / Material UI
-Maps	Leaflet / MapboxGL
-State Mgmt	Redux Toolkit / Zustand
-Auth	JWT-based authentication
-Communication	REST APIs + WebSocket/MQTT hooks
-Build & Deployment	Netlify / Vercel / Docker
-
- ## Running the code
-
-  Run `npm i` to install the dependencies.
+Run `npm i` to install the dependencies.
 
   Run `npm run dev` to start the development server.
   
