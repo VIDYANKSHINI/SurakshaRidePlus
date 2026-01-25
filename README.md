@@ -86,4 +86,32 @@ npm install
 Run `npm i` to install the dependencies.
 
   Run `npm run dev` to start the development server.
+Live location sharing card
+
+Audio/video streaming placeholders with backend integration
+
+📶 7. Offline & Fallback
+
+Graceful UI fallback when internet or GPS becomes unavailable
+
+SMS-based fallback prompts
+
+🤝 8. Volunteer Dashboard (Frontend View)
+
+Alerts list
+
+Map view
+
+Verification badge and interaction buttons
+
+🏗️ Tech Stack (Frontend)
+Category	Technology
+Framework	React (Vite or CRA)
+UI	TailwindCSS / Material UI
+Maps	Leaflet / MapboxGL
+State Mgmt	Redux Toolkit / Zustand
+Auth	JWT-based authentication
+Communication	REST APIs + WebSocket/MQTT hooks
+Build & Deployment	Netlify / Vercel / Docker
+
   
